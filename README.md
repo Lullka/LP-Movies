@@ -1,6 +1,6 @@
 # LP Movies
 
-Este programa tem o intuito de práticar habilidades usando react com suas tecnologias e manipular APIs que estão em `[LK-Movies-API](https://github.com/Lullka)`
+Este programa tem o intuito de práticar habilidades usando react com suas tecnologias e manipular APIs que estão em [LK-Movies-API](https://github.com/Lullka)
 
 Tecnologias utilizadas
 - NodeJS
