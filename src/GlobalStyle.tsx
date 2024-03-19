@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         --header-height: 80px;
         --text-color-hover: #ae8aff;
         --background-color-hover: #9b65ff30;
+        --padding-video-controls: 0 30px;
     }
 
     html{

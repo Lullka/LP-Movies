@@ -15,10 +15,11 @@ export const Carrossel = () => {
 const WideContents = styled.div`
     position: relative;
     width: 100%;
-    min-height: 475px;
+    min-height: 650px;
     height: var(--wideCollection-height);
     background: url(/imgs/back.jpg);
-    padding: 11.5rem 5rem;
+    background-size: cover;
+    padding: 10.5rem 5rem;
     max-height: 650px;
 
     @media only screen and (max-height: 530px){
@@ -42,7 +43,7 @@ const WideWebSiteLogo = styled.div`
 
     h1{
         margin-bottom: 10px;
-        font-size: 4px;
+        font-size: 54px;
         color: #FFF;
         /* background: -webkit-linear-gradient(75deg, rgba(102, 56, 242), rgba(255, 16, 242));
         -webkit-background-clip: text;

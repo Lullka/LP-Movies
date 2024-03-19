@@ -8,11 +8,15 @@ export const CardsController = () => {
                 <h1>Mais populares</h1>
                 <ULCards>
                     <Card>
-                        <Link to="/watch/4141">
+                        <Link to="/watch/1111">
                             <div><img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=480,height=720,fit=contain,quality=85/catalog/crunchyroll/3f493195883a48083f37cb6a2e18427c.jpe"alt="animeImage" /></div>
                         </Link>
                     </Card>
-                    <Card></Card>
+                    <Card>
+                        <Link to="/watch/2222">
+                            <div><img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=480,height=720,fit=contain,quality=85/catalog/crunchyroll/3f493195883a48083f37cb6a2e18427c.jpe"alt="animeImage" /></div>
+                        </Link>
+                    </Card>
                 </ULCards>
             </CardSection>
         </Container>

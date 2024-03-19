@@ -1,27 +1,28 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { Link, useNavigate  } from "react-router-dom"
 import styled from "styled-components"
 
 export const Header = () => {
     const [URLPath, setURLPath] = useState<string>(window.location.pathname);
     const [hamburguerBTN, setHarmburguerBTN] = useState<boolean>(false);
+
+    const History = useNavigate();
+
+    useEffect(() => {
+        setURLPath(window.location.pathname);
+    }, [History])
+
     return(
         <Container>
             <Left>
-                <button onClick={() => {
-                        if(!hamburguerBTN){
-                            setHarmburguerBTN(true);
-                        }else{
-                            setHarmburguerBTN(false);
-                        }
-                    }}
+                <button onClick={() => setHarmburguerBTN(!hamburguerBTN)}
                     className={hamburguerBTN ? "hamburguer active" : "hamburguer"}
                     ></button>
-                <Link to="/"><img src="svg/lkLogo.svg" alt="Logo do Luka" /></Link>
+                <Link to="/"><img src="/svg/lkLogo.svg" alt="Logo do Luka" /></Link>
                 <div>
-                    <Link to="/" onClick={() => setURLPath('/browse')} className={URLPath == '/browse' ? 'InThisPage' : ''}>Início</Link>
-                    <Link to="/films" onClick={() => setURLPath('/films')} className={URLPath == '/films' ? 'InThisPage' : ''}>Filmes</Link>
-                    <Link to="/series" onClick={() => setURLPath('/series')}  className={URLPath == '/series' ? 'InThisPage' : ''}>Séries</Link>
+                    <Link to="/" className={URLPath == '/browse' ? 'InThisPage' : ''}>Início</Link>
+                    <Link to="/films" className={URLPath == '/films' ? 'InThisPage' : ''}>Filmes</Link>
+                    <Link to="/series" className={URLPath == '/series' ? 'InThisPage' : ''}>Séries</Link>
                     <Link to="/">Portifolio</Link>
                 </div>
             </Left>
@@ -74,6 +75,7 @@ const Left = styled.div`
         padding: 9px 11px;
         border-radius: 5px;
         transition: 0.2s;
+        user-select: none;
     }
 
     a:hover{

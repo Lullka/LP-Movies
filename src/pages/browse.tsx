@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Carrossel } from "./Carrossel";
-import { CardsController } from "./CardsController";
+import { Carrossel } from "../assets/components/Carrossel";
+import { CardsController } from "../assets/components/CardsController";
 
 const Browse = () => {
     return(
