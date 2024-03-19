@@ -1,11 +1,20 @@
-# React + TypeScript + Vite
+# LP Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este programa tem o intuito de práticar habilidades usando react com suas tecnologias e manipular APIs que estão em [LK-Movies-API](https://github.com/Lullka)
 
-Currently, two official plugins are available:
+Tecnologias utilizadas
+- NodeJS
+- React
+- Typescript
+- Styled Components
+- APIs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Versão do node utilizada
+```bash 
+v20.4.0 
+``` 
+
+
 
 ## Expanding the ESLint configuration
 
