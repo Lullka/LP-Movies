@@ -143,9 +143,9 @@ const VideoContainer = styled.div`
     width: 100%;
     background-color: #000;
     position: relative;
-    height: calc(100vh - 15.625rem);
+    /* height: calc(100vh - 15.625rem);
+    max-height: calc(100vh - 20.625rem); */
     max-height: calc(100vh - 20.625rem);
-    transition: 0.2s;
 `;
 
 const VideoProtection = styled.div`
@@ -158,7 +158,7 @@ const VideoProtection = styled.div`
         height: 100%;
     }
 
-    video[poster]{
+    video[  poster]{
         object-fit: cover;
     }
 `;

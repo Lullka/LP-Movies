@@ -9,7 +9,7 @@ export const Search = () => {
                 <input onChange={(ev) => setTextSearch(ev.target.value)}  required autoCorrect="off" type="text" placeholder="Procurar..."></input>
             </AreaSearch>
             <SearchContents>
-                <h1 style={{color: 'white'}}>{textSearch == '' ? 'Nada pesquisado' : textSearch}</h1>
+                <h1 style={{color: 'white'}}>{textSearch == '' ? 'Nada pesquisado.' : textSearch}</h1>
             </SearchContents>
         </Container>
     )
