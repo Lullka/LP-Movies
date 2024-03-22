@@ -21,9 +21,18 @@ const WideContents = styled.div`
     background-size: cover;
     padding: 10.5rem 5rem;
     max-height: 650px;
+    transition: 0.2s;
 
     @media only screen and (max-height: 530px){
         padding: 5.5rem 5rem;
+    }
+
+    @media only screen and (max-width: 470px){
+        padding: 10.5rem 2.5rem;
+    }
+
+    @media only screen and (max-width: 350px){
+        padding: 10.5rem 1rem;
     }
 `;
 
@@ -48,6 +57,42 @@ const WideWebSiteLogo = styled.div`
         /* background: -webkit-linear-gradient(75deg, rgba(102, 56, 242), rgba(255, 16, 242));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; */
+    }
+
+    @media only screen and (max-width: 590px){
+        h1{
+            font-size: 35px;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    @media only screen and (max-width: 470px){
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            font-size: 35px;
+        }
+
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media only screen and (max-width: 350px){
+        h1{
+            font-size: 30px;
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
 `;
 
